@@ -1,5 +1,6 @@
+'use strict';
+
 $(function() {
-    'use strict';
     
     var word = $('#word');
     var length = word.data('length');
@@ -22,7 +23,7 @@ $(function() {
                         .append('<span>' + letter + '</span>');
                 }
             }); 
-    }
+    };
     
     $(document).keydown(function(event) {
         // Letter keys have key codes in the range 65-90
